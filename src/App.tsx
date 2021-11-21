@@ -4,7 +4,7 @@ import './styles/common.scss';
 const App = () => {
     return (
         <div className='wrap'>
-            <span>REACT ASSEMBLY</span>
+            <span>REACT ASSEMBLYY</span>
         </div>
     );
 };
