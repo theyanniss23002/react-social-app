@@ -72,6 +72,11 @@
         "style-loader": "^3.3.0",
         "ts-loader": "^9.2.6"
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "echo \\[Husky] pre-commit\\'"
+        }
+    },
     "lint-staged": {
         "*.{js,jsx,ts,tsx,json}": [
             "pretty-quick --staged",
