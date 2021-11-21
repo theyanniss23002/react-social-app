@@ -12,7 +12,9 @@ jobs:
       runs-on: ubuntu-latest
       steps:
           - name: 'Run Pre-commit'
-            run: yarn lint-staged
+            run: |
+                yarn
+                yarn lint-staged
   build:
     runs-on: ubuntu-latest
 
