@@ -8,13 +8,6 @@ on:
     branches: [ master, feature/** ]
 
 jobs:
-  chore:
-      runs-on: ubuntu-latest
-      steps:
-          - name: 'Run Pre-commit'
-            run: |
-                yarn
-                yarn lint-staged
   build:
     runs-on: ubuntu-latest
 
