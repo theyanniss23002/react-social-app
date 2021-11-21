@@ -1,14 +1,15 @@
-name: NodeJS with Webpack
+name: Github Workflow
 
 on:
   push:
-    branches: [ master, future/** ]
+    branches: [ master, feature/** ]
+
   pull_request:
-    branches: [ master, future/** ]
+    branches: [ master, feature/** ]
 
 jobs:
   build:
-    runs-on: [ windows-latest, ubuntu-latest, macos-latest ]
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
@@ -24,5 +25,5 @@ jobs:
 
     - name: Build
       run: |
-        yarn install
-        npx webpack
+        yarn
+#        npx webpack
